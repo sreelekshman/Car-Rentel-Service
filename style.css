@@ -93,10 +93,6 @@ header{
     width: 100%;
     min-height: 100vh;
     position:relative;
-    background: url("Car Rentel Website Images/img/Car Website – 1@2x.png");
-    background-repeat : no-repeat ;
-    background-position: center right;
-    background-size: cover;
     display: grid;
     align-items: center;
     grid-template-columns: repeat(2, 1fr);

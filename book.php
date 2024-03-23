@@ -10,6 +10,19 @@
   <link rel="stylesheet" href="style.css">
   <!-- box icons-->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+  <style>
+    div img {
+      width: 80%;
+      float: right;
+      margin-top: 70px;
+      margin-right: 140px;
+      border-radius: 20px;
+    }
+    h2 {
+      font-size: 24px;
+      color: #000;
+    }
+  </style>
 </head>
 
 <body>
@@ -32,15 +45,21 @@
           $carname = $_GET['carname'];
           $monthlyrate = $_GET['monthlyrate'];
           $hourlyrate = $_GET['hourlyrate'];
+          $image = $_GET['image'];
 
         echo "
           <h1>
             <span>$carname</span><br>
-            $monthlyrate /month<br>
-            $hourlyrate /hour<br>
           </h1>
+          <h2>
+            Monthly Rate: $monthlyrate<br>
+            Hourly Rate: $hourlyrate<br>
+          </h2>
         ";
         ?>
+    </div>
+    <div>
+    <img src="<?php echo $image; ?>">
     </div>
 
     <div class="form-container">
